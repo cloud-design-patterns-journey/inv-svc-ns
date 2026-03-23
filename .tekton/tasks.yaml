@@ -21,6 +21,10 @@ spec:
     in stand alone mode.
   workspaces:
     - name: manifest-dir
+    - name: dockerconfig
+      description: Includes a docker `config.json`
+      optional: true
+      mountPath: /tekton/home/.docker
   params:
     - name: ARGS
       description: The Arguments to be passed to Trivy command.

@@ -118,6 +118,8 @@ spec:
         workspaces:
           - name: manifest-dir
             workspace: manifest-dir
+          - name: dockerconfig
+            workspace: registry-config
       - name: deploy
         params:
           - name: app-name
